@@ -13,15 +13,12 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            SpendMoney();
+            Debug.Log(money);
         }
+ 
+        
     }
 
-    void SpendMoney()
-    {
-        money -= 10;
-        Debug.Log("money left : "+money);
-    }
 }
